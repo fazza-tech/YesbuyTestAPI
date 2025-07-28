@@ -10,6 +10,7 @@ exports.handler = async function (event, context) {
         "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       category: "men's clothing",
       subcategory: "Casual Shirts",
+      offer: ["Trending", "Flash Sale"],
       fit: "Slim Fit",
       tags: ["shirt", "casual", "slim fit", "striped", "blue", "white"],
       images: [
@@ -31,6 +32,7 @@ exports.handler = async function (event, context) {
         "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
       category: "Topwear",
       subcategory: "Kurtas & Kurtis",
+      offer: ["Trending", "Flash Sale"],
       gender: "Women",
       tags: [
         "kurta",
@@ -63,6 +65,7 @@ exports.handler = async function (event, context) {
         "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
       category: "Top Wear",
       subcategory: "Shirts",
+      offer: ["Trending", "Flash Sale"],
       gender: "Men",
       fit: "Regular Fit",
       images: [
@@ -85,6 +88,7 @@ exports.handler = async function (event, context) {
         "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
       category: "Top Wear",
       subcategory: "Dresses",
+      offer: ["Trending"],
       gender: "Women",
       fit: "Bodycon",
       length: "Midi",
@@ -109,6 +113,7 @@ exports.handler = async function (event, context) {
       description:
         "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
       category: "Bottom Wear",
+      offer: ["Trending"],
       subcategory: "Jeans",
       gender: "Men",
       fit: "Straight Fit",
@@ -137,6 +142,7 @@ exports.handler = async function (event, context) {
       description:
         "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
       category: "Bottom Wear",
+      offer: ["Trending"],
       subcategory: "Trousers",
       gender: "Men",
       fabric: "Textured",
@@ -160,6 +166,60 @@ exports.handler = async function (event, context) {
       rating: {
         rate: 4.1,
         count: 95,
+      },
+    },
+    {
+      id: 7,
+      title: "Men Pure Cotton Chinos Trousers",
+      brand: "Roadster",
+      price: 1399,
+      discount: 22, // example discount
+      description:
+        "Classic men’s pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
+      category: "Bottom Wear",
+      offer: ["Trending", "Flash Sale"],
+      subcategory: "Trousers",
+      gender: "Men",
+      fabric: "Pure Cotton",
+      fit: "Regular Fit",
+      style: "Chinos",
+      closure: "Button and Zip",
+      tags: ["trousers", "cotton", "chinos", "men", "casual", "roadster"],
+      images: [
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/dbe83483-7518-4650-a53d-0c601730e5dd1740386832739-Roadster-Men-Trousers-4501740386832181-1.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/bde759e9-0d89-4fbf-a2ac-e68a70cbb2ee1740386832693-Roadster-Men-Trousers-4501740386832181-3.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/d1460a62-f416-4a55-bd52-1bb9952526061740386832619-Roadster-Men-Trousers-4501740386832181-6.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/dbe83483-7518-4650-a53d-0c601730e5dd1740386832739-Roadster-Men-Trousers-4501740386832181-1.jpg",
+      ],
+      rating: {
+        rate: 4.0,
+        count: 110,
+      },
+    },
+    {
+      id: 8,
+      title: "Men Solid Polo Collar T-shirt",
+      brand: "HIGHLANDER",
+      price: 799,
+      discount: 20, // example discount
+      description:
+        "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
+      category: "Top Wear",
+      offer: ["Trending", "Flash Sale"],
+      subcategory: "T-shirts",
+      gender: "Men",
+      fabric: "Cotton Blend",
+      style: "Polo Collar",
+      tags: ["tshirt", "polo collar", "men", "casual", "highlander", "solid"],
+      images: [
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/y8kWwzYX_904ebfbd787d41e58e5b6f1f29f0515b.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/f77Kerio_17a59c3dca464ac68bcb044d6b742369.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/4N8LMMp5_44a0ae7925014761ae10fbb2d4ce4cc3.jpg",
+        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/f77Kerio_17a59c3dca464ac68bcb044d6b742369.jpg",
+      ],
+      rating: {
+        rate: 4.4,
+        count: 134,
       },
     },
   ];
