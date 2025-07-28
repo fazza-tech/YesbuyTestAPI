@@ -5,6 +5,7 @@ exports.handler = async function (event, context) {
       title: "Men Blue & White Slim Fit Striped Casual Shirt",
       brand: "Mast & Harbour",
       price: 669,
+      discount: 30, // 15% discount
       description:
         "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       category: "men's clothing",
@@ -22,6 +23,7 @@ exports.handler = async function (event, context) {
       title: "Women Solid Strappy Bodycon Midi Dress",
       brand: "Tokyo Talkies",
       price: 441,
+      discount: 25, // 10% discount
       description:
         "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
       category: "women's clothing",
@@ -33,6 +35,45 @@ exports.handler = async function (event, context) {
       rating: {
         rate: 4.2,
         count: 87,
+      },
+    },
+    {
+      id: 3,
+      title: "Regular Fit Shirt",
+      brand: "H&M",
+      price: 799,
+      discount: 20,
+      description:
+        "A comfortable and stylish regular fit shirt from H&M. Perfect for both casual and semi-formal occasions.",
+      category: "men's clothing",
+      images: [
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/AXjfbN2w_dd42db875de04d8fafad2744c4e2be91.jpg",
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/jp2Sqnui_5da4496ca73348aebe1a82e6e388a41a.jpg",
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/Q7LOtVZB_6116ea9f86aa4f35a778479a2651e316.jpg",
+      ],
+      rating: {
+        rate: 4.4,
+        count: 95,
+      },
+    },
+    {
+      id: 4,
+      title: "Floral Printed Notch Collar Thread Work Cotton A-Line Kurta",
+      brand: "FIORRA",
+      price: 599,
+      discount: 25,
+      description:
+        "Elegant A-line kurta with floral prints and detailed thread work. Designed with a notch collar and made from breathable cotton fabric for ethnic sophistication and comfort.",
+      category: "women's clothing",
+      images: [
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/118a30f5-de7d-4f05-8964-f5e479ec1eea1713614141316FIORRAWomenEthnicMotifsPrintedThreadWorkKurta1.jpg",
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/5e2dd41b-3aeb-4a27-87d6-005887f5ea381713614141339FIORRAWomenEthnicMotifsPrintedThreadWorkKurta2.jpg",
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/5cdcd1df-3d4b-4ebb-a093-a5bf6b955a0d1713614141372FIORRAWomenEthnicMotifsPrintedThreadWorkKurta3.jpg",
+        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/76015909-0837-4018-a8c1-5226ddb89aa51713614141361FIORRAWomenEthnicMotifsPrintedThreadWorkKurta5.jpg",
+      ],
+      rating: {
+        rate: 4.3,
+        count: 102,
       },
     },
   ];
