@@ -485,12 +485,36 @@ exports.handler = async function (event, context) {
     // Include all remaining products (5-8, 10-12) following the same structure
   ];
 
+  // Extract id from the path, e.g., /trendings/1
+  const pathParts = event.path ? event.path.split("/") : [];
+  const idStr = pathParts.length > 0 ? pathParts[pathParts.length - 1] : null;
+  const id = idStr && !isNaN(Number(idStr)) ? Number(idStr) : null;
+
+  let responseBody;
+  if (id) {
+    const product = products.find((p) => p.id === id);
+    if (product) {
+      responseBody = product;
+    } else {
+      return {
+        statusCode: 404,
+        headers: {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({ error: "Product not found" }),
+      };
+    }
+  } else {
+    responseBody = products;
+  }
+
   return {
     statusCode: 200,
     headers: {
       "Content-Type": "application/json",
       "Access-Control-Allow-Origin": "*",
     },
-    body: JSON.stringify(products),
+    body: JSON.stringify(responseBody),
   };
 };
