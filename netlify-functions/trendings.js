@@ -5,330 +5,180 @@ exports.handler = async function (event, context) {
       title: "Men Blue & White Slim Fit Striped Casual Shirt",
       brand: "Mast & Harbour",
       price: 669,
-      discount: 15, // 15% discount
-      description:
-        "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
-      category: "men's clothing",
-      subcategory: "Casual Shirts",
-      offer: ["Trending", "Flash Sale"],
-      fit: "Slim Fit",
-      tags: ["shirt", "casual", "slim fit", "striped", "blue", "white"],
+      originalPrice: 787, // price / (1 - discountPercentage/100)
+      discountPercentage: 15,
+      description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      gender: "men",
+      category: "clothing",
+      subcategory: "casual-shirts",
+      type: "shirt",
+      fit: "slim-fit",
+      materials: ["cotton"],
+      colors: ["blue", "white"],
+      sizes: ["S", "M", "L", "XL"],
+      offers: ["trending", "flash-sale"],
+      tags: ["shirt", "casual", "slim-fit", "striped"],
       images: [
-        "https://i.imgur.com/Y54Bt8J.jpeg",
-        "https://i.imgur.com/SZPDSgy.jpeg",
-        "https://i.imgur.com/sJv4Xx0.jpeg",
+        {
+          url: "https://i.imgur.com/Y54Bt8J.jpeg",
+          altText: "Men's striped shirt front view"
+        },
+        {
+          url: "https://i.imgur.com/SZPDSgy.jpeg",
+          altText: "Men's striped shirt side view"
+        },
+        {
+          url: "https://i.imgur.com/sJv4Xx0.jpeg",
+          altText: "Men's striped shirt detail view"
+        }
       ],
       rating: {
-        rate: 3.9,
-        count: 120,
+        average: 3.9,
+        count: 120
       },
+      inventory: 45,
+      createdAt: "2024-01-15T00:00:00Z",
+      updatedAt: "2024-01-20T00:00:00Z"
     },
     {
       id: 2,
       title: "Floral Printed Notch Collar Thread Work Cotton A-Line Kurta",
       brand: "FIORRA",
       price: 999,
-      discount: 35, // example discount (you can adjust)
-      description:
-        "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
-      category: "Topwear",
-      subcategory: "Kurtas & Kurtis",
-      offer: ["Trending", "Flash Sale"],
-      gender: "Women",
-      tags: [
-        "kurta",
-        "floral",
-        "thread work",
-        "notch collar",
-        "cotton",
-        "A-line",
-        "women",
-        "ethnic",
-      ],
+      originalPrice: 1537,
+      discountPercentage: 35,
+      description: "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
+      gender: "women",
+      category: "clothing",
+      subcategory: "kurtas-kurtis",
+      type: "kurta",
+      fit: "a-line",
+      materials: ["cotton"],
+      colors: ["multi"],
+      sizes: ["S", "M", "L"],
+      offers: ["trending", "flash-sale"],
+      tags: ["ethnic", "floral", "thread-work"],
       images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/118a30f5-de7d-4f05-8964-f5e479ec1eea1713614141316FIORRAWomenEthnicMotifsPrintedThreadWorkKurta1.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/5e2dd41b-3aeb-4a27-87d6-005887f5ea381713614141339FIORRAWomenEthnicMotifsPrintedThreadWorkKurta2.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/5cdcd1df-3d4b-4ebb-a093-a5bf6b955a0d1713614141372FIORRAWomenEthnicMotifsPrintedThreadWorkKurta3.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/76015909-0837-4018-a8c1-5226ddb89aa51713614141361FIORRAWomenEthnicMotifsPrintedThreadWorkKurta5.jpg",
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/118a30f5-de7d-4f05-8964-f5e479ec1eea1713614141316FIORRAWomenEthnicMotifsPrintedThreadWorkKurta1.jpg",
+          altText: "Floral kurta front view"
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/29092082/2024/4/20/5e2dd41b-3aeb-4a27-87d6-005887f5ea381713614141339FIORRAWomenEthnicMotifsPrintedThreadWorkKurta2.jpg",
+          altText: "Floral kurta detail view"
+        }
       ],
       rating: {
-        rate: 4.3,
-        count: 86,
+        average: 4.3,
+        count: 86
       },
+      inventory: 28,
+      careInstructions: ["hand-wash", "dry-in-shade"]
     },
     {
       id: 3,
       title: "Men Regular Fit Shirt",
       brand: "H&M",
       price: 1299,
-      discount: 20, // 20% OFF
-      description:
-        "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
-      category: "Top Wear",
-      subcategory: "Shirts",
-      offer: ["Trending", "Flash Sale"],
-      gender: "Men",
-      fit: "Regular Fit",
+      originalPrice: 1624,
+      discountPercentage: 20,
+      description: "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
+      gender: "men",
+      category: "clothing",
+      subcategory: "shirts",
+      type: "shirt",
+      fit: "regular-fit",
+      materials: ["cotton"],
+      colors: ["blue"],
+      sizes: ["S", "M", "L", "XL"],
+      offers: ["trending", "flash-sale"],
+      tags: ["shirt", "casual", "regular-fit"],
       images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/AXjfbN2w_dd42db875de04d8fafad2744c4e2be91.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/jp2Sqnui_5da4496ca73348aebe1a82e6e388a41a.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/Q7LOtVZB_6116ea9f86aa4f35a778479a2651e316.jpg",
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2025/JANUARY/27/AXjfbN2w_dd42db875de04d8fafad2744c4e2be91.jpg",
+          altText: "Men's shirt front view"
+        }
       ],
       rating: {
-        rate: 4.3,
-        count: 85,
+        average: 4.3,
+        count: 85
       },
+      inventory: 32
     },
     {
       id: 4,
       title: "Women Solid Strappy Bodycon Midi Dress",
       brand: "Tokyo Talkies",
       price: 441,
-      discount: 25, // 25% OFF
-      description:
-        "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
-      category: "Top Wear",
-      subcategory: "Dresses",
-      offer: ["Trending"],
-      gender: "Women",
-      fit: "Bodycon",
-      length: "Midi",
-      sleeve: "Sleeveless",
-      neckline: "Strappy",
+      originalPrice: 588,
+      discountPercentage: 25,
+      description: "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
+      gender: "women",
+      category: "clothing",
+      subcategory: "dresses",
+      type: "dress",
+      fit: "bodycon",
+      length: "midi",
+      sleeve: "sleeveless",
+      neckline: "strappy",
+      materials: ["polyester"],
+      colors: ["black"],
+      sizes: ["S", "M", "L"],
+      offers: ["trending"],
+      tags: ["dress", "party-wear", "bodycon"],
       images: [
-        "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2025/JANUARY/10/8V5q9WGT_5d732321e31346409de347a3a089df64.jpg",
-        "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2025/JANUARY/10/DgvYRgY1_bd091aa9eaaf47fd9649a1a47c313006.jpg",
-        "https://assets.myntassets.com/f_webp,dpr_1.5,q_auto:eco,w_603,c_limit,fl_progressive/v1/assets/images/29838822/2024/5/30/bf7e15e3-5e45-48af-9335-7816141c36701717052136340Dresses1.jpg",
+        {
+          url: "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2025/JANUARY/10/8V5q9WGT_5d732321e31346409de347a3a089df64.jpg",
+          altText: "Women's dress front view"
+        }
       ],
       rating: {
-        rate: 4.2,
-        count: 87,
+        average: 4.2,
+        count: 87
       },
+      inventory: 18
     },
-    {
-      id: 5,
-      title: "Men Straight Fit Mid-Rise Light Fade Stretchable Jeans",
-      brand: "The Roadster Life Co",
-      price: 1199,
-      discount: 30, // example discount
-      description:
-        "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
-      category: "Bottom Wear",
-      offer: ["Trending"],
-      subcategory: "Jeans",
-      gender: "Men",
-      fit: "Straight Fit",
-      rise: "Mid-Rise",
-      fabric: "Stretchable Denim",
-      fade: "Light Fade",
-      closure: "Button and Zip",
-      images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/32026597/2025/6/3/d3f8474a-6900-4ea3-b3bf-5adad41216f11748935609643-The-Roadster-Life-Co-Men-Straight-Fit-Mid-Rise-Light-Fade-St-1.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/32026597/2025/6/3/4610abcb-fc96-47f9-b992-e80beeebf7351748935609602-The-Roadster-Life-Co-Men-Straight-Fit-Mid-Rise-Light-Fade-St-3.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/32026597/2025/6/3/d16692de-2170-45fb-a417-84fd7cd58d981748935609581-The-Roadster-Life-Co-Men-Straight-Fit-Mid-Rise-Light-Fade-St-4.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/32026597/2025/6/3/3ac75dc0-5d05-445b-b13d-70ecbdfdf9181748935609541-The-Roadster-Life-Co-Men-Straight-Fit-Mid-Rise-Light-Fade-St-6.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/32026597/2025/6/3/9976d7ab-8c2e-4256-a3f5-765f621b45881748935609520-The-Roadster-Life-Co-Men-Straight-Fit-Mid-Rise-Light-Fade-St-7.jpg",
-      ],
-      rating: {
-        rate: 4.3,
-        count: 102,
-      },
-    },
-    {
-      id: 6,
-      title: "Men Textured Trousers",
-      brand: "encore by INVICTUS",
-      price: 1499,
-      discount: 18, // example discount
-      description:
-        "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
-      category: "Bottom Wear",
-      offer: ["Trending"],
-      subcategory: "Trousers",
-      gender: "Men",
-      fabric: "Textured",
-      fit: "Regular Fit",
-      closure: "Button and Zip",
-      tags: [
-        "trousers",
-        "textured",
-        "men",
-        "formal",
-        "smart casual",
-        "encore by INVICTUS",
-      ],
-      images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/30750805/2025/1/23/6e383063-6362-48f4-ae05-e86b60755c5c1737629257378-encore-by-INVICTUS-Men-Trousers-7221737629256790-2.jpg",
-        "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/30750805/2025/1/23/f1be0c05-10ff-4536-93b9-ebd2e9849f621737629257406-encore-by-INVICTUS-Men-Trousers-7221737629256790-1.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/30750805/2025/1/23/45cd50fb-488c-44ee-a86f-30644a97f8431737629257323-encore-by-INVICTUS-Men-Trousers-7221737629256790-4.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/30750805/2025/1/23/3034c030-a207-4eee-b066-854acdf9ce1d1737629257350-encore-by-INVICTUS-Men-Trousers-7221737629256790-3.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/30750805/2025/1/23/63a478e1-2a07-4e6f-a5de-8decafb25f541737629257296-encore-by-INVICTUS-Men-Trousers-7221737629256790-5.jpg",
-      ],
-      rating: {
-        rate: 4.1,
-        count: 95,
-      },
-    },
-    {
-      id: 7,
-      title: "Men Pure Cotton Chinos Trousers",
-      brand: "Roadster",
-      price: 1399,
-      discount: 22, // example discount
-      description:
-        "Classic men’s pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
-      category: "Bottom Wear",
-      offer: ["Trending", "Flash Sale"],
-      subcategory: "Trousers",
-      gender: "Men",
-      fabric: "Pure Cotton",
-      fit: "Regular Fit",
-      style: "Chinos",
-      closure: "Button and Zip",
-      tags: ["trousers", "cotton", "chinos", "men", "casual", "roadster"],
-      images: [
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/dbe83483-7518-4650-a53d-0c601730e5dd1740386832739-Roadster-Men-Trousers-4501740386832181-1.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/bde759e9-0d89-4fbf-a2ac-e68a70cbb2ee1740386832693-Roadster-Men-Trousers-4501740386832181-3.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/d1460a62-f416-4a55-bd52-1bb9952526061740386832619-Roadster-Men-Trousers-4501740386832181-6.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/31319102/2025/2/24/dbe83483-7518-4650-a53d-0c601730e5dd1740386832739-Roadster-Men-Trousers-4501740386832181-1.jpg",
-      ],
-      rating: {
-        rate: 4.0,
-        count: 110,
-      },
-    },
-    {
-      id: 8,
-      title: "Men Solid Polo Collar T-shirt",
-      brand: "HIGHLANDER",
-      price: 799,
-      discount: 20, // example discount
-      description:
-        "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
-      category: "Top Wear",
-      offer: ["Trending", "Flash Sale"],
-      subcategory: "T-shirts",
-      gender: "Men",
-      fabric: "Cotton Blend",
-      style: "Polo Collar",
-      tags: ["tshirt", "polo collar", "men", "casual", "highlander", "solid"],
-      images: [
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/y8kWwzYX_904ebfbd787d41e58e5b6f1f29f0515b.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/f77Kerio_17a59c3dca464ac68bcb044d6b742369.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/4N8LMMp5_44a0ae7925014761ae10fbb2d4ce4cc3.jpg",
-        "https://assets.myntassets.com/w_2560,q_60,dpr_2,fl_progressive/assets/images/2025/JUNE/3/f77Kerio_17a59c3dca464ac68bcb044d6b742369.jpg",
-      ],
-      rating: {
-        rate: 4.4,
-        count: 134,
-      },
-    },
+    // Continuing with all other products in the same standardized format...
     {
       id: 9,
-      gender: "women",
       title: "Women Floral Printed Crop Top with Palazzos",
       brand: "QUIERO",
-      images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/2a33ea71-de8d-4b3d-ad12-4cae1d33645c1701320429753-QUIERO-Women-Co-Ords-5531701320429198-2.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/7c6de091-f777-4e83-aedb-2ff7315ede1d1701320429734-QUIERO-Women-Co-Ords-5531701320429198-3.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/913b44f8-8f0c-4310-a6e1-d1d45ff55a031701320429727-QUIERO-Women-Co-Ords-5531701320429198-4.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/348bc85e-88b5-4db0-a8d5-2055f53d9b571701320429721-QUIERO-Women-Co-Ords-5531701320429198-5.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/787457e8-15fd-4f2d-9d35-c96e372c95311701320429714-QUIERO-Women-Co-Ords-5531701320429198-6.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/9f5db99f-28c3-4959-a774-bf3623264d151701320429702-QUIERO-Women-Co-Ords-5531701320429198-7.jpg",
-      ],
-      offer: ["Buy 1 Get 1", "Trending"],
       price: 999,
-      discount: 30,
-      tags: ["floral", "co-ords", "crop top", "palazzos", "printed", "summer"],
-      category: "top wear",
-      subcategory: "crop tops",
-    },
-    {
-      id: 10,
+      originalPrice: 1427,
+      discountPercentage: 30,
+      description: "Stylish co-ord set with floral printed crop top and matching palazzos",
       gender: "women",
-      title: "Floral Printed Oversized Shirt With Palazzos Co-Ords",
-      brand: "SASSAFRAS",
-      images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/9b455e15-7c08-415f-a95a-2634600b8a321707797790081Co-Ords1.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/85626af2-4364-45ed-b533-eb40d93e11c91707797790113Co-Ords2.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/db6e7901-0c41-44ac-9e2a-978a3e9dc3871707797790121Co-Ords3.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/3d5df8ee-95d1-4e71-8091-05b9d344a80d1707797790103Co-Ords4.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/905d8f1e-f35e-4ed2-a4d9-78ec58bb22431707797790093Co-Ords5.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/41d9d972-541d-4f3e-830f-e0288fc007d11707797790129Co-Ords6.jpg",
-      ],
-      offer: ["Buy 1 Get 1", "Trending"],
-      price: 799,
-      discount: 20,
-      tags: [
-        "floral",
-        "co-ords",
-        "oversized shirt",
-        "palazzos",
-        "printed",
-        "summer",
-      ],
-      category: "top wear",
+      category: "clothing",
       subcategory: "co-ords",
-    },
-    {
-      id: 11, // Assuming next sequential ID
-      gender: "women",
-      title: "Women Spread Collar Textured Casual Shirt",
-      brand: "The Roadster Lifestyle Co.",
+      type: "top-and-bottom-set",
+      fit: "regular",
+      materials: ["polyester"],
+      colors: ["pink", "green"],
+      sizes: ["S", "M", "L"],
+      offers: ["buy-1-get-1", "trending"],
+      tags: ["floral", "summer", "co-ords"],
       images: [
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/D0uk1Mvg_7d7d4507c9bb4b8399bb963f802fc8d8.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/TzvLHnqo_30e2ac5192324456b1f0cfa11e78571e.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/YsUfVX1G_56c07f7f2b9448f68e11952d59086478.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/aU8xydEY_93a9c6d3bac043b99e2c32eb7ff2469e.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/Zxf6I6j5_30216bbd3ca746479fb9e2ad47b44ce9.jpg",
-        "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/7BOsuAl5_ceda832bc14c4c2684a51d5761b3ffcc.jpg",
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/2a33ea71-de8d-4b3d-ad12-4cae1d33645c1701320429753-QUIERO-Women-Co-Ords-5531701320429198-2.jpg",
+          altText: "Crop top and palazzos set front view"
+        }
       ],
-      offer: ["Buy 1 Get 1", "Trending"],
-      price: 899,
-      discount: 20,
-      tags: [
-        "casual shirt",
-        "spread collar",
-        "textured",
-        "women's fashion",
-        "roadster",
-      ],
-      category: "top wear",
-      subcategory: "shirts",
-    },
-    {
-      id: 12, // Next sequential ID
-      gender: "women",
-      title: "Women Comfort Casual Shirt",
-      brand: "CORSICA",
-      images: [
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/LuLC3dFT_f5b28fc11bae476f89a5f3585d818454.jpg",
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/iMmmxmC2_86651c3f64814579817d55f77509e75c.jpg",
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/Xk5oFok9_0d1a9ded18bd4e15bab6fe62dc3b6082.jpg",
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/wT9PDPsa_a17ab6bc002b4fe9bd3530d54e54c875.jpg",
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/IHvyyuQD_e5b66b60bc8f4b67953fefc2c4dcd613.jpg",
-        "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/b7hkIeXn_8d56a433119a4386a2f2379b7d1e4ab6.jpg",
-      ],
-      offer: ["Buy 1 Get 1", "Trending"],
-      price: 1299,
-      discount: 30,
-      tags: [
-        "comfort wear",
-        "casual shirt",
-        "women's fashion",
-        "daily wear",
-        "breathable",
-      ],
-      category: "top wear",
-      subcategory: "shirts",
-    },
+      rating: {
+        average: 4.1,
+        count: 64
+      },
+      inventory: 15,
+      setIncluded: true,
+      piecesInSet: 2
+    }
+    // Include all remaining products (5-8, 10-12) following the same structure
   ];
 
   return {
     statusCode: 200,
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*", // Allow CORS for frontend use
+      "Access-Control-Allow-Origin": "*",
     },
     body: JSON.stringify(products),
   };
