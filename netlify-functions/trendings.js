@@ -27,7 +27,7 @@ exports.handler = async function (event, context) {
         {
           url: "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2024/1/12/c2601e05-457e-46be-b9e1-0e02b836dc101705041567527-compressed_142539_0.jpg",
           altText: "Men's striped shirt side view",
-        }
+        },
       ],
       rating: {
         average: 3.9,
@@ -475,10 +475,32 @@ exports.handler = async function (event, context) {
         "flowy-silhouette",
       ],
       occasion: ["casual", "day-out", "vacation"],
-      
     },
-
-    // Include all remaining products (5-8, 10-12) following the same structure
+    {
+      id: 11, // Next sequential ID
+      gender: "men",
+      title: "Grey Regular Fit Self Pattern Kurta Set With Jacket",
+      brand: "KISAH",
+      images: [
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008551.jpeg",
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008592.jpeg",
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008563.jpeg",
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008544.jpeg",
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008525.jpeg",
+        "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008576.jpeg",
+      ],
+      offer: [], // No offer mentioned
+      tags: [
+        "ethnic wear",
+        "kurta set",
+        "jacket",
+        "regular fit",
+        "self pattern",
+        "grey",
+      ],
+      category: "ethnic wear",
+      subcategory: "kurta sets",
+    },
   ];
 
   // Extract id from the path, e.g., /trendings/1
