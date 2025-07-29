@@ -14,8 +14,9 @@ exports.handler = async function (event, context) {
       fit: "Slim Fit",
       tags: ["shirt", "casual", "slim fit", "striped", "blue", "white"],
       images: [
-        "https://assets.myntassets.com/w_1440,q_60,dpr_1,fl_progressive/assets/images/2024/AUGUST/12/iSJz5Njt_c1194cf91f2345f0aa27b4c49e12e0e3.jpg",
-        "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2024/1/12/c2601e05-457e-46be-b9e1-0e02b836dc101705041567527-compressed_142539_0.jpg",
+        "https://i.imgur.com/Y54Bt8J.jpeg",
+        "https://i.imgur.com/SZPDSgy.jpeg",
+        "https://i.imgur.com/sJv4Xx0.jpeg",
       ],
       rating: {
         rate: 3.9,
