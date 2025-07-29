@@ -21,17 +21,13 @@ exports.handler = async function (event, context) {
       tags: ["shirt", "casual", "slim-fit", "striped"],
       images: [
         {
-          url: "https://i.imgur.com/Y54Bt8J.jpeg",
+          url: "https://assets.myntassets.com/w_1440,q_60,dpr_1,fl_progressive/assets/images/2024/AUGUST/12/iSJz5Njt_c1194cf91f2345f0aa27b4c49e12e0e3.jpg",
           altText: "Men's striped shirt front view",
         },
         {
-          url: "https://i.imgur.com/SZPDSgy.jpeg",
+          url: "https://assets.myntassets.com/w_1496,q_60,dpr_1,fl_progressive/assets/images/2024/1/12/c2601e05-457e-46be-b9e1-0e02b836dc101705041567527-compressed_142539_0.jpg",
           altText: "Men's striped shirt side view",
-        },
-        {
-          url: "https://i.imgur.com/sJv4Xx0.jpeg",
-          altText: "Men's striped shirt detail view",
-        },
+        }
       ],
       rating: {
         average: 3.9,
@@ -481,7 +477,7 @@ exports.handler = async function (event, context) {
       occasion: ["casual", "day-out", "vacation"],
       
     },
-    
+
     // Include all remaining products (5-8, 10-12) following the same structure
   ];
 
