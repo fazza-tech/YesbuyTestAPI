@@ -480,6 +480,8 @@ exports.handler = async function (event, context) {
       id: 11, // Next sequential ID
       gender: "men",
       title: "Grey Regular Fit Self Pattern Kurta Set With Jacket",
+      price:1299,
+      discountPercentage:25,
       brand: "KISAH",
       images: [
     {
