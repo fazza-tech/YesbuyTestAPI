@@ -236,6 +236,8 @@ exports.handler = async function (event, context) {
         "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25951630/2023/11/30/9f5db99f-28c3-4959-a774-bf3623264d151701320429702-QUIERO-Women-Co-Ords-5531701320429198-7.jpg",
       ],
       offer: ["Buy 1 Get 1", "Trending"],
+      price: 999,
+      discount: 30,
       tags: ["floral", "co-ords", "crop top", "palazzos", "printed", "summer"],
       category: "top wear",
       subcategory: "crop tops",
@@ -254,6 +256,8 @@ exports.handler = async function (event, context) {
         "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/41d9d972-541d-4f3e-830f-e0288fc007d11707797790129Co-Ords6.jpg",
       ],
       offer: ["Buy 1 Get 1", "Trending"],
+      price: 799,
+      discount: 20,
       tags: [
         "floral",
         "co-ords",
@@ -279,6 +283,8 @@ exports.handler = async function (event, context) {
         "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/2024/DECEMBER/3/7BOsuAl5_ceda832bc14c4c2684a51d5761b3ffcc.jpg",
       ],
       offer: ["Buy 1 Get 1", "Trending"],
+      price: 899,
+      discount: 20,
       tags: [
         "casual shirt",
         "spread collar",
@@ -303,6 +309,8 @@ exports.handler = async function (event, context) {
         "https://assets.myntassets.com/w_1440,q_60,dpr_2,fl_progressive/assets/images/2025/MAY/10/b7hkIeXn_8d56a433119a4386a2f2379b7d1e4ab6.jpg",
       ],
       offer: ["Buy 1 Get 1", "Trending"],
+      price: 1299,
+      discount: 30,
       tags: [
         "comfort wear",
         "casual shirt",
