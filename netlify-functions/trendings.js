@@ -450,16 +450,28 @@ exports.handler = async function (event, context) {
       tags: ["summer-wear", "floral-print", "matching-set", "casual-outfit"],
       images: [
         {
-          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/9b455e15-7c08-415f-a95a-2634600b8a321707797790081Co-Ords1.jpg",
-          altText: "Floral co-ord set front view",
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008551.jpeg",
+          altText: "Grey kurta set front view with jacket",
         },
         {
-          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/85626af2-4364-45ed-b533-eb40d93e11c91707797790113Co-Ords2.jpg",
-          altText: "Floral co-ord set side view",
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008592.jpeg",
+          altText: "Grey kurta set side view showing pattern details",
         },
         {
-          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/27558686/2024/2/13/db6e7901-0c41-44ac-9e2a-978a3e9dc3871707797790121Co-Ords3.jpg",
-          altText: "Floral co-ord set detail view",
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008563.jpeg",
+          altText: "Close-up of kurta's self pattern texture",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008544.jpeg",
+          altText: "Kurta set back view showing jacket design",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008525.jpeg",
+          altText: "Kurta set flat lay display",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008576.jpeg",
+          altText: "Model wearing complete kurta set with jacket",
         },
       ],
       rating: {
