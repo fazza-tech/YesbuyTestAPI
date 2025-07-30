@@ -480,35 +480,35 @@ exports.handler = async function (event, context) {
       id: 11, // Next sequential ID
       gender: "men",
       title: "Grey Regular Fit Self Pattern Kurta Set With Jacket",
-      price:1299,
-      discountPercentage:25,
+      price: 1299,
+      discountPercentage: 25,
       brand: "KISAH",
       images: [
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008551.jpeg",
-      altText: "Grey kurta set front view with jacket"
-    },
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008592.jpeg",
-      altText: "Grey kurta set side view showing pattern details"
-    },
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008563.jpeg",
-      altText: "Close-up of kurta's self pattern texture"
-    },
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008544.jpeg",
-      altText: "Kurta set back view showing jacket design"
-    },
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008525.jpeg",
-      altText: "Kurta set flat lay display"
-    },
-    {
-      url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008576.jpeg",
-      altText: "Model wearing complete kurta set with jacket"
-    }
-  ],
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008551.jpeg",
+          altText: "Grey kurta set front view with jacket",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008592.jpeg",
+          altText: "Grey kurta set side view showing pattern details",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008563.jpeg",
+          altText: "Close-up of kurta's self pattern texture",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008544.jpeg",
+          altText: "Kurta set back view showing jacket design",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008525.jpeg",
+          altText: "Kurta set flat lay display",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i13/437Wx649H/MP000000019495598_437Wx649H_202309292008576.jpeg",
+          altText: "Model wearing complete kurta set with jacket",
+        },
+      ],
       offer: [], // No offer mentioned
       tags: [
         "ethnic wear",
@@ -520,6 +520,76 @@ exports.handler = async function (event, context) {
       ],
       category: "ethnic wear",
       subcategory: "kurta sets",
+    },
+    {
+      id: 9,
+      title: "Pink Cotton Regular Fit Shirt",
+      brand: "U.S. Polo Assn.",
+      price: 1799,
+      originalPrice: 1799, // No discount info provided
+      discountPercentage: 0,
+      description:
+        "Stylish pink cotton regular fit shirt from U.S. Polo Assn. Designed for modern men seeking comfort and a polished look. Ideal for smart-casual or office wear.",
+      gender: "men",
+      category: "top-wear",
+      subcategory: "shirts",
+      type: "casual-shirt",
+      fit: "regular-fit",
+      style: "button-up",
+      neck: "collared",
+      sleeve: "long-sleeve",
+      materials: ["cotton"],
+      materialComposition: "100% cotton",
+      colors: ["pink"],
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      offers: ["b1g1", "trending"],
+      tags: ["smart-casual", "office-wear", "solid-color", "cotton", "pink"],
+      images: [
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290450001.jpeg",
+          altText: "Front view of pink shirt",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290449545.jpeg",
+          altText: "Side view of pink shirt",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290450124.jpeg",
+          altText: "Close-up of buttons",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290450183.jpeg",
+          altText: "Sleeve and cuff details",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290450072.jpeg",
+          altText: "Shirt back view",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290449476.jpeg",
+          altText: "Fabric texture close-up",
+        },
+        {
+          url: "https://img.tatacliq.com/images/i10/437Wx649H/MP000000017017250_437Wx649H_202303290450237.jpeg",
+          altText: "Complete outfit view",
+        },
+      ],
+      rating: {
+        average: 4.5,
+        count: 210,
+      },
+      inventory: 64,
+      careInstructions: ["machine-wash", "do-not-bleach", "warm-iron"],
+      features: ["breathable-fabric", "soft-touch", "durable-stitching"],
+      occasion: ["casual", "office", "smart-casual"],
+      weight: {
+        value: 220,
+        unit: "grams",
+      },
+      fabricWeight: "170 GSM",
+      pattern: "solid",
+      createdAt: "2025-07-30T00:00:00Z",
+      updatedAt: "2025-07-30T00:00:00Z",
     },
   ];
 
