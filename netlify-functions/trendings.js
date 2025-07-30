@@ -522,7 +522,7 @@ exports.handler = async function (event, context) {
       subcategory: "kurta sets",
     },
     {
-      id: 9,
+      id: 12,
       title: "Pink Cotton Regular Fit Shirt",
       brand: "U.S. Polo Assn.",
       price: 1799,
