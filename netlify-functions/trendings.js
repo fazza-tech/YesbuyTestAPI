@@ -5,10 +5,9 @@ exports.handler = async function (event, context) {
       title: "Men Blue & White Slim Fit Striped Casual Shirt",
       brand: "Mast & Harbour",
       price: 669,
-      originalPrice: 787, // price / (1 - discountPercentage/100)
+      originalPrice: 787,
       discountPercentage: 15,
-      description:
-        "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       gender: "men",
       category: "clothing",
       subcategory: "casual-shirts",
@@ -36,6 +35,8 @@ exports.handler = async function (event, context) {
       inventory: 45,
       createdAt: "2024-01-15T00:00:00Z",
       updatedAt: "2024-01-20T00:00:00Z",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 2,
@@ -44,8 +45,7 @@ exports.handler = async function (event, context) {
       price: 999,
       originalPrice: 1537,
       discountPercentage: 35,
-      description:
-        "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
+      description: "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
       gender: "women",
       category: "clothing",
       subcategory: "kurtas-kurtis",
@@ -75,6 +75,8 @@ exports.handler = async function (event, context) {
       },
       inventory: 28,
       careInstructions: ["hand-wash", "dry-in-shade"],
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 3,
@@ -83,8 +85,7 @@ exports.handler = async function (event, context) {
       price: 1299,
       originalPrice: 1624,
       discountPercentage: 20,
-      description:
-        "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
+      description: "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
       gender: "men",
       category: "clothing",
       subcategory: "shirts",
@@ -112,6 +113,8 @@ exports.handler = async function (event, context) {
         count: 85,
       },
       inventory: 32,
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 4,
@@ -120,8 +123,7 @@ exports.handler = async function (event, context) {
       price: 441,
       originalPrice: 588,
       discountPercentage: 25,
-      description:
-        "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
+      description: "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
       gender: "women",
       category: "clothing",
       subcategory: "dresses",
@@ -152,17 +154,17 @@ exports.handler = async function (event, context) {
         count: 87,
       },
       inventory: 18,
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
-
     {
       id: 5,
       title: "Men Straight Fit Mid-Rise Light Fade Stretchable Jeans",
       brand: "The Roadster Life Co",
       price: 1199,
-      originalPrice: 1713, // Calculated: 1199 / (1 - 0.30)
+      originalPrice: 1713,
       discountPercentage: 30,
-      description:
-        "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
+      description: "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "jeans",
@@ -204,16 +206,17 @@ exports.handler = async function (event, context) {
       features: ["stretchable fabric", "light fade wash", "5-pocket styling"],
       createdAt: "2024-06-03T00:00:00Z",
       updatedAt: "2024-06-10T00:00:00Z",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 6,
       title: "Men Textured Trousers",
       brand: "encore by INVICTUS",
       price: 1499,
-      originalPrice: 1828, // Calculated: 1499 / (1 - 0.18)
+      originalPrice: 1828,
       discountPercentage: 18,
-      description:
-        "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
+      description: "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "trousers",
@@ -258,16 +261,17 @@ exports.handler = async function (event, context) {
       },
       createdAt: "2025-01-15T00:00:00Z",
       updatedAt: "2025-01-20T00:00:00Z",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 7,
       title: "Men Pure Cotton Chinos Trousers",
       brand: "Roadster",
       price: 1399,
-      originalPrice: 1794, // Calculated: 1399 / (1 - 0.22)
+      originalPrice: 1794,
       discountPercentage: 22,
-      description:
-        "Classic men's pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
+      description: "Classic men's pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "trousers",
@@ -300,12 +304,7 @@ exports.handler = async function (event, context) {
       },
       inventory: 58,
       careInstructions: ["machine-wash", "iron-medium"],
-      features: [
-        "100% pure cotton",
-        "reinforced stitching",
-        "multi-pocket design",
-        "wrinkle-resistant",
-      ],
+      features: ["100% pure cotton", "reinforced stitching", "multi-pocket design", "wrinkle-resistant"],
       occasion: ["casual", "semi-formal", "office-casual"],
       weight: {
         value: 380,
@@ -318,16 +317,17 @@ exports.handler = async function (event, context) {
       fabricWeight: "8 oz",
       createdAt: "2025-02-20T00:00:00Z",
       updatedAt: "2025-02-25T00:00:00Z",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 8,
       title: "Men Solid Polo Collar T-shirt",
       brand: "HIGHLANDER",
       price: 799,
-      originalPrice: 999, // Calculated: 799 / (1 - 0.20)
+      originalPrice: 999,
       discountPercentage: 20,
-      description:
-        "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
+      description: "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
       gender: "men",
       category: "top-wear",
       subcategory: "t-shirts",
@@ -362,12 +362,7 @@ exports.handler = async function (event, context) {
       },
       inventory: 87,
       careInstructions: ["machine-wash", "tumble-dry-low"],
-      features: [
-        "moisture-wicking",
-        "breathable-fabric",
-        "reinforced-collar",
-        "tagless-neck",
-      ],
+      features: ["moisture-wicking", "breathable-fabric", "reinforced-collar", "tagless-neck"],
       occasion: ["casual", "smart-casual", "everyday"],
       weight: {
         value: 180,
@@ -377,6 +372,8 @@ exports.handler = async function (event, context) {
       pattern: "solid",
       createdAt: "2025-06-01T00:00:00Z",
       updatedAt: "2025-06-10T00:00:00Z",
+      cod: "COD Available",
+      return: "7 Days Exchange/Return Available" // Randomly selected for 7 days return
     },
     {
       id: 9,
@@ -385,8 +382,7 @@ exports.handler = async function (event, context) {
       price: 999,
       originalPrice: 1427,
       discountPercentage: 30,
-      description:
-        "Stylish co-ord set with floral printed crop top and matching palazzos",
+      description: "Stylish co-ord set with floral printed crop top and matching palazzos",
       gender: "women",
       category: "clothing",
       subcategory: "co-ords",
@@ -419,16 +415,17 @@ exports.handler = async function (event, context) {
       inventory: 15,
       setIncluded: true,
       piecesInSet: 2,
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 10,
       title: "Floral Printed Oversized Shirt With Palazzos Co-Ords",
       brand: "SASSAFRAS",
-      price: 1299, // Added missing price field
-      originalPrice: 1699, // Calculated assuming 25% discount if price was missing
-      discountPercentage: 25, // Added discount percentage
-      description:
-        "Stylish co-ord set featuring floral printed oversized shirt with matching palazzos. Perfect for summer outings and casual occasions.", // Added description
+      price: 1299,
+      originalPrice: 1699,
+      discountPercentage: 25,
+      description: "Stylish co-ord set featuring floral printed oversized shirt with matching palazzos. Perfect for summer outings and casual occasions.",
       gender: "women",
       category: "top-wear",
       subcategory: "co-ords",
@@ -463,21 +460,18 @@ exports.handler = async function (event, context) {
         },
       ],
       rating: {
-        average: 4.2, // Added default rating
-        count: 68, // Added rating count
+        average: 4.2,
+        count: 68,
       },
-      inventory: 42, // Added inventory count
+      inventory: 42,
       careInstructions: ["hand-wash", "dry-in-shade"],
-      features: [
-        "matching-set",
-        "breathable-fabric",
-        "elastic-waist",
-        "flowy-silhouette",
-      ],
+      features: ["matching-set", "breathable-fabric", "elastic-waist", "flowy-silhouette"],
       occasion: ["casual", "day-out", "vacation"],
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
-      id: 11, // Next sequential ID
+      id: 11,
       gender: "men",
       title: "Grey Regular Fit Self Pattern Kurta Set With Jacket",
       price: 1299,
@@ -509,27 +503,21 @@ exports.handler = async function (event, context) {
           altText: "Model wearing complete kurta set with jacket",
         },
       ],
-      offer: [], // No offer mentioned
-      tags: [
-        "ethnic wear",
-        "kurta set",
-        "jacket",
-        "regular fit",
-        "self pattern",
-        "grey",
-      ],
+      offer: [],
+      tags: ["ethnic wear", "kurta set", "jacket", "regular fit", "self pattern", "grey"],
       category: "ethnic wear",
       subcategory: "kurta sets",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
     },
     {
       id: 12,
       title: "Pink Cotton Regular Fit Shirt",
       brand: "U.S. Polo Assn.",
       price: 1799,
-      originalPrice: 1799, // No discount info provided
+      originalPrice: 1799,
       discountPercentage: 0,
-      description:
-        "Stylish pink cotton regular fit shirt from U.S. Polo Assn. Designed for modern men seeking comfort and a polished look. Ideal for smart-casual or office wear.",
+      description: "Stylish pink cotton regular fit shirt from U.S. Polo Assn. Designed for modern men seeking comfort and a polished look. Ideal for smart-casual or office wear.",
       gender: "men",
       category: "top-wear",
       subcategory: "shirts",
@@ -590,7 +578,9 @@ exports.handler = async function (event, context) {
       pattern: "solid",
       createdAt: "2025-07-30T00:00:00Z",
       updatedAt: "2025-07-30T00:00:00Z",
-    },
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available"
+    }
   ];
 
   // Extract id from the path, e.g., /trendings/1
