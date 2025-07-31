@@ -7,13 +7,15 @@ exports.handler = async function (event, context) {
       price: 669,
       originalPrice: 787,
       discountPercentage: 15,
-      description: "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+      description:
+        "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       gender: "men",
       category: "clothing",
       subcategory: "casual-shirts",
       type: "shirt",
       fit: "slim-fit",
       materials: ["cotton"],
+      color: "blue",
       colors: ["blue", "white"],
       sizes: ["S", "M", "L", "XL"],
       offers: ["trending", "flash-sale"],
@@ -36,7 +38,7 @@ exports.handler = async function (event, context) {
       createdAt: "2024-01-15T00:00:00Z",
       updatedAt: "2024-01-20T00:00:00Z",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 2,
@@ -45,13 +47,15 @@ exports.handler = async function (event, context) {
       price: 999,
       originalPrice: 1537,
       discountPercentage: 35,
-      description: "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
+      description:
+        "Elegantly designed floral printed cotton kurta with thread work. Perfect for casual and festive occasions.",
       gender: "women",
       category: "clothing",
       subcategory: "kurtas-kurtis",
       type: "kurta",
       fit: "a-line",
       materials: ["cotton"],
+      color: "muliti",
       colors: ["multi"],
       sizes: ["S", "M", "L"],
       offers: ["trending", "flash-sale"],
@@ -76,7 +80,7 @@ exports.handler = async function (event, context) {
       inventory: 28,
       careInstructions: ["hand-wash", "dry-in-shade"],
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 3,
@@ -85,13 +89,15 @@ exports.handler = async function (event, context) {
       price: 1299,
       originalPrice: 1624,
       discountPercentage: 20,
-      description: "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
+      description:
+        "This men's regular fit shirt is ideal for casual outings or semi-formal occasions. Designed for comfort and a clean look.",
       gender: "men",
       category: "clothing",
       subcategory: "shirts",
       type: "shirt",
       fit: "regular-fit",
       materials: ["cotton"],
+      color: "blue",
       colors: ["blue"],
       sizes: ["S", "M", "L", "XL"],
       offers: ["trending", "flash-sale"],
@@ -114,7 +120,7 @@ exports.handler = async function (event, context) {
       },
       inventory: 32,
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 4,
@@ -123,7 +129,8 @@ exports.handler = async function (event, context) {
       price: 441,
       originalPrice: 588,
       discountPercentage: 25,
-      description: "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
+      description:
+        "This solid strappy bodycon midi dress from Tokyo Talkies is a perfect pick for parties or evening wear. Elegant fit and lightweight fabric ensure style with comfort.",
       gender: "women",
       category: "clothing",
       subcategory: "dresses",
@@ -155,7 +162,7 @@ exports.handler = async function (event, context) {
       },
       inventory: 18,
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 5,
@@ -164,7 +171,8 @@ exports.handler = async function (event, context) {
       price: 1199,
       originalPrice: 1713,
       discountPercentage: 30,
-      description: "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
+      description:
+        "These straight-fit mid-rise jeans from The Roadster Life Co are designed with a lightly faded look and stretchable fabric for everyday comfort and mobility. Perfect for casual and semi-casual outfits.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "jeans",
@@ -207,7 +215,7 @@ exports.handler = async function (event, context) {
       createdAt: "2024-06-03T00:00:00Z",
       updatedAt: "2024-06-10T00:00:00Z",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 6,
@@ -216,7 +224,8 @@ exports.handler = async function (event, context) {
       price: 1499,
       originalPrice: 1828,
       discountPercentage: 18,
-      description: "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
+      description:
+        "Stylish men's textured trousers from encore by INVICTUS, designed for comfort and a smart casual look. Perfect for office wear or semi-formal occasions.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "trousers",
@@ -262,7 +271,7 @@ exports.handler = async function (event, context) {
       createdAt: "2025-01-15T00:00:00Z",
       updatedAt: "2025-01-20T00:00:00Z",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 7,
@@ -271,7 +280,8 @@ exports.handler = async function (event, context) {
       price: 1399,
       originalPrice: 1794,
       discountPercentage: 22,
-      description: "Classic men's pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
+      description:
+        "Classic men's pure cotton chinos trousers by Roadster, offering comfort and a clean, versatile look. Ideal for casual and semi-formal wear.",
       gender: "men",
       category: "bottom-wear",
       subcategory: "trousers",
@@ -304,7 +314,12 @@ exports.handler = async function (event, context) {
       },
       inventory: 58,
       careInstructions: ["machine-wash", "iron-medium"],
-      features: ["100% pure cotton", "reinforced stitching", "multi-pocket design", "wrinkle-resistant"],
+      features: [
+        "100% pure cotton",
+        "reinforced stitching",
+        "multi-pocket design",
+        "wrinkle-resistant",
+      ],
       occasion: ["casual", "semi-formal", "office-casual"],
       weight: {
         value: 380,
@@ -318,7 +333,7 @@ exports.handler = async function (event, context) {
       createdAt: "2025-02-20T00:00:00Z",
       updatedAt: "2025-02-25T00:00:00Z",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 8,
@@ -327,7 +342,8 @@ exports.handler = async function (event, context) {
       price: 799,
       originalPrice: 999,
       discountPercentage: 20,
-      description: "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
+      description:
+        "Classic men's solid polo collar T-shirt from HIGHLANDER, made for comfort and style. Perfect for casual outings and everyday wear.",
       gender: "men",
       category: "top-wear",
       subcategory: "t-shirts",
@@ -362,7 +378,12 @@ exports.handler = async function (event, context) {
       },
       inventory: 87,
       careInstructions: ["machine-wash", "tumble-dry-low"],
-      features: ["moisture-wicking", "breathable-fabric", "reinforced-collar", "tagless-neck"],
+      features: [
+        "moisture-wicking",
+        "breathable-fabric",
+        "reinforced-collar",
+        "tagless-neck",
+      ],
       occasion: ["casual", "smart-casual", "everyday"],
       weight: {
         value: 180,
@@ -373,7 +394,7 @@ exports.handler = async function (event, context) {
       createdAt: "2025-06-01T00:00:00Z",
       updatedAt: "2025-06-10T00:00:00Z",
       cod: "COD Available",
-      return: "7 Days Exchange/Return Available" // Randomly selected for 7 days return
+      return: "7 Days Exchange/Return Available", // Randomly selected for 7 days return
     },
     {
       id: 9,
@@ -382,7 +403,8 @@ exports.handler = async function (event, context) {
       price: 999,
       originalPrice: 1427,
       discountPercentage: 30,
-      description: "Stylish co-ord set with floral printed crop top and matching palazzos",
+      description:
+        "Stylish co-ord set with floral printed crop top and matching palazzos",
       gender: "women",
       category: "clothing",
       subcategory: "co-ords",
@@ -416,7 +438,7 @@ exports.handler = async function (event, context) {
       setIncluded: true,
       piecesInSet: 2,
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 10,
@@ -425,7 +447,8 @@ exports.handler = async function (event, context) {
       price: 1299,
       originalPrice: 1699,
       discountPercentage: 25,
-      description: "Stylish co-ord set featuring floral printed oversized shirt with matching palazzos. Perfect for summer outings and casual occasions.",
+      description:
+        "Stylish co-ord set featuring floral printed oversized shirt with matching palazzos. Perfect for summer outings and casual occasions.",
       gender: "women",
       category: "top-wear",
       subcategory: "co-ords",
@@ -465,10 +488,15 @@ exports.handler = async function (event, context) {
       },
       inventory: 42,
       careInstructions: ["hand-wash", "dry-in-shade"],
-      features: ["matching-set", "breathable-fabric", "elastic-waist", "flowy-silhouette"],
+      features: [
+        "matching-set",
+        "breathable-fabric",
+        "elastic-waist",
+        "flowy-silhouette",
+      ],
       occasion: ["casual", "day-out", "vacation"],
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 11,
@@ -504,11 +532,18 @@ exports.handler = async function (event, context) {
         },
       ],
       offer: [],
-      tags: ["ethnic wear", "kurta set", "jacket", "regular fit", "self pattern", "grey"],
+      tags: [
+        "ethnic wear",
+        "kurta set",
+        "jacket",
+        "regular fit",
+        "self pattern",
+        "grey",
+      ],
       category: "ethnic wear",
       subcategory: "kurta sets",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
+      return: "15 Days Exchange/Return Available",
     },
     {
       id: 12,
@@ -517,7 +552,8 @@ exports.handler = async function (event, context) {
       price: 1799,
       originalPrice: 1799,
       discountPercentage: 0,
-      description: "Stylish pink cotton regular fit shirt from U.S. Polo Assn. Designed for modern men seeking comfort and a polished look. Ideal for smart-casual or office wear.",
+      description:
+        "Stylish pink cotton regular fit shirt from U.S. Polo Assn. Designed for modern men seeking comfort and a polished look. Ideal for smart-casual or office wear.",
       gender: "men",
       category: "top-wear",
       subcategory: "shirts",
@@ -579,8 +615,219 @@ exports.handler = async function (event, context) {
       createdAt: "2025-07-30T00:00:00Z",
       updatedAt: "2025-07-30T00:00:00Z",
       cod: "COD Available",
-      return: "15 Days Exchange/Return Available"
-    }
+      return: "15 Days Exchange/Return Available",
+    },
+    {
+      id: 13,
+      title: "Oversized Ribbed Corduroy Casual Shirt",
+      brand: "HERE&NOW",
+      price: 1499,
+      originalPrice: 1999,
+      discountPercentage: 25,
+      description:
+        "Stylish oversized ribbed corduroy casual shirt from HERE&NOW. Perfect for a relaxed yet fashionable look with its unique texture and comfortable fit.",
+      gender: "men",
+      category: "clothing",
+      subcategory: "casual-shirts",
+      type: "shirt",
+      fit: "oversized",
+      materials: ["corduroy"],
+      color:"grey",
+      colors: ["grey"],
+      colorVariants: [14, 15],
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      offers: ["trending"],
+      tags: ["shirt", "casual", "oversized", "corduroy", "ribbed"],
+      images: [
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/1d6c822a-a9c7-4898-9042-59ba632d5d001695445558581HERENOWMenGreyOpaqueCasualShirt1.jpg",
+          altText: "Front view of corduroy shirt",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/c3d649f5-6758-429f-afe1-a6d010b7af081695445558526HERENOWMenGreyOpaqueCasualShirt2.jpg",
+          altText: "Side view showing ribbed texture",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/4e1ccae1-0ce8-4c0c-bb18-17faf9705aee1695445558560HERENOWMenGreyOpaqueCasualShirt3.jpg",
+          altText: "Detail view of corduroy fabric",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/afa85ee6-0509-4031-9fcd-1c338f7e31171695445558600HERENOWMenGreyOpaqueCasualShirt4.jpg",
+          altText: "Back view of shirt",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/0d26da75-cedf-4688-b5ea-e019441699f31695445558542HERENOWMenGreyOpaqueCasualShirt5.jpg",
+          altText: "Close-up of button details",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/56461f0b-90a4-4fad-8a5e-7a287f0d49221695445558617HERENOWMenGreyOpaqueCasualShirt6.jpg",
+          altText: "Model wearing shirt",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128902/2023/9/23/f8ded9cc-d073-4558-8009-6431eb14be991695445558633HERENOWMenGreyOpaqueCasualShirt7.jpg",
+          altText: "Styled outfit view",
+        },
+      ],
+      rating: {
+        average: 4.2,
+        count: 78,
+      },
+      inventory: 36,
+      careInstructions: ["machine-wash", "iron-on-low"],
+      features: [
+        "ribbed-corduroy",
+        "oversized-fit",
+        "button-front",
+        "casual-style",
+      ],
+      weight: {
+        value: 350,
+        unit: "grams",
+      },
+      fabricWeight: "medium-weight",
+      pattern: "solid",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available",
+      createdAt: "2023-09-23T00:00:00Z",
+      updatedAt: "2023-10-01T00:00:00Z",
+    },
+    {
+      id: 14,
+      title: "Oversized Corduroy Casual Shirt",
+      brand: "HERE&NOW",
+      price: 1599,
+      originalPrice: 1999,
+      discountPercentage: 20,
+      description:
+        "Trendy oversized corduroy casual shirt in classic black from HERE&NOW. Features a relaxed fit, premium corduroy fabric, and versatile styling options for a contemporary look.",
+      gender: "men",
+      category: "clothing",
+      subcategory: "casual-shirts",
+      type: "shirt",
+      fit: "oversized",
+      materials: ["corduroy"],
+      color:"black",
+      colors: ["black"],
+      colorVariants: [13, 15], // Linking to grey and other variant shirts
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      offers: ["trending", "new-arrival"],
+      tags: ["shirt", "casual", "oversized", "corduroy", "black"],
+      images: [
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128900/2023/9/23/aea2a163-725a-47a8-abbc-df0e7a1f1cf41695444899338HERENOWMenBlackOpaqueCasualShirt6.jpg",
+          altText: "Front view of black corduroy shirt",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128900/2023/9/23/ff0ec219-f52a-4afe-a28a-cacb4238a03c1695444899241HERENOWMenBlackOpaqueCasualShirt2.jpg",
+          altText: "Side view showing corduroy texture",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128900/2023/9/23/7887aea0-d71c-4ac8-b741-dc32692334e51695444899280HERENOWMenBlackOpaqueCasualShirt3.jpg",
+          altText: "Detail view of fabric texture",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128900/2023/9/23/e363837d-0a7d-4dbb-9e43-0d3104b91aed1695444899260HERENOWMenBlackOpaqueCasualShirt4.jpg",
+          altText: "Back view of shirt",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128900/2023/9/23/cd8c7fed-e85f-45ab-b227-292d0a9a08c81695444899223HERENOWMenBlackOpaqueCasualShirt5.jpg",
+          altText: "Styled outfit view",
+        },
+      ],
+      rating: {
+        average: 4.3,
+        count: 92,
+      },
+      inventory: 42,
+      careInstructions: ["machine-wash", "iron-on-low", "do-not-bleach"],
+      features: [
+        "premium-corduroy",
+        "oversized-silhouette",
+        "button-down",
+        "versatile-styling",
+      ],
+      weight: {
+        value: 380,
+        unit: "grams",
+      },
+      fabricWeight: "heavyweight",
+      pattern: "solid",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available",
+      createdAt: "2023-09-23T00:00:00Z",
+      updatedAt: "2023-10-05T00:00:00Z",
+    },
+    {
+      id: 15,
+      title: "Oversized Corduroy Spread Collar Short Collar Casual Shirt",
+      brand: "HERE&NOW",
+      price: 1699,
+      originalPrice: 1999,
+      discountPercentage: 15,
+      description:
+        "Fashionable maroon oversized corduroy shirt featuring a distinctive spread collar design. Made with premium quality corduroy fabric for a luxurious feel and comfortable oversized fit.",
+      gender: "men",
+      category: "clothing",
+      subcategory: "casual-shirts",
+      type: "shirt",
+      fit: "oversized",
+      collar: "spread-collar",
+      materials: ["corduroy"],
+      color:"maroon",
+      colors: ["maroon"],
+      colorVariants: [13, 14], // Linking to grey (ID 13) and black (ID 14) variants
+      sizes: ["S", "M", "L", "XL", "XXL"],
+      offers: ["trending", "limited-stock"],
+      tags: [
+        "shirt",
+        "casual",
+        "oversized",
+        "corduroy",
+        "maroon",
+        "spread-collar",
+      ],
+      images: [
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128904/2023/9/23/6788900f-a1ec-453e-b0e7-0c4612527dbb1695445562076HERENOWMenMaroonOpaqueCasualShirt1.jpg",
+          altText: "Front view of maroon corduroy shirt with spread collar",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128904/2023/9/23/5bb9dcf2-3c8d-4605-b0dc-8d861bfae2d21695445562131HERENOWMenMaroonOpaqueCasualShirt2.jpg",
+          altText: "Detail view showing spread collar design",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128904/2023/9/23/cb8dfb09-ddeb-40ec-bc99-45f6e08d85921695445562058HERENOWMenMaroonOpaqueCasualShirt6.jpg",
+          altText: "Side view showing corduroy texture",
+        },
+        {
+          url: "https://assets.myntassets.com/f_webp,fl_progressive/h_960,q_80,w_720/v1/assets/images/25128904/2023/9/23/3fcd6ba4-7b11-4137-a461-87daae94d3fa1695445562113HERENOWMenMaroonOpaqueCasualShirt7.jpg",
+          altText: "Styled outfit view of maroon shirt",
+        },
+      ],
+      rating: {
+        average: 4.4,
+        count: 68,
+      },
+      inventory: 28,
+      careInstructions: ["dry-clean", "steam-iron"],
+      features: [
+        "premium-corduroy",
+        "oversized-fit",
+        "spread-collar",
+        "button-front",
+        "fashion-collar",
+      ],
+      weight: {
+        value: 400,
+        unit: "grams",
+      },
+      fabricWeight: "heavyweight",
+      pattern: "solid",
+      cod: "COD Available",
+      return: "15 Days Exchange/Return Available",
+      createdAt: "2023-09-23T00:00:00Z",
+      updatedAt: "2023-10-10T00:00:00Z",
+    },
   ];
 
   // Extract id from the path, e.g., /trendings/1
